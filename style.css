@@ -1,66 +1,104 @@
-.main{
--webkit-text-size-adjust: 100%;
-font-feature-settings: normal;
--webkit-tap-highlight-color: transparent;
-font-variation-settings: normal;
-tab-size: 4;
---swiper-theme-color: #007aff;
---swiper-navigation-size: 44px;
-line-height: inherit;
--webkit-font-smoothing: antialiased;
-color: #fff;
-font-family: inherit;
-border: 0 solid #e5e7eb;
-box-sizing: border-box;
---tw-border-spacing-x: 0;
---tw-border-spacing-y: 0;
---tw-translate-x: 0;
---tw-translate-y: 0;
---tw-rotate: 0;
---tw-skew-x: 0;
---tw-skew-y: 0;
---tw-scale-x: 1;
---tw-scale-y: 1;
---tw-pan-x: ;
---tw-pan-y: ;
---tw-pinch-zoom: ;
---tw-scroll-snap-strictness: proximity;
---tw-gradient-from-position: ;
---tw-gradient-via-position: ;
---tw-gradient-to-position: ;
---tw-ordinal: ;
---tw-slashed-zero: ;
---tw-numeric-figure: ;
---tw-numeric-spacing: ;
---tw-numeric-fraction: ;
---tw-ring-inset: ;
---tw-ring-offset-width: 0px;
---tw-ring-offset-color: #fff;
---tw-ring-color: #3f83f880;
---tw-ring-offset-shadow: 0 0 #0000;
---tw-ring-shadow: 0 0 #0000;
---tw-shadow: 0 0 #0000;
---tw-shadow-colored: 0 0 #0000;
---tw-blur: ;
---tw-brightness: ;
---tw-contrast: ;
---tw-grayscale: ;
---tw-hue-rotate: ;
---tw-invert: ;
---tw-saturate: ;
---tw-sepia: ;
---tw-drop-shadow: ;
---tw-backdrop-blur: ;
---tw-backdrop-brightness: ;
---tw-backdrop-contrast: ;
---tw-backdrop-grayscale: ;
---tw-backdrop-hue-rotate: ;
---tw-backdrop-invert: ;
---tw-backdrop-opacity: ;
---tw-backdrop-saturate: ;
---tw-backdrop-sepia: ;
---tw-contain-size: ;
---tw-contain-layout: ;
---tw-contain-paint: ;
---tw-contain-style: ;
-flex-grow: 1;}
+  /* @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap'); */
+  * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pepsi Owners 2";
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.main-text h1 {
+    font-size: 4rem;
+    line-height: 0.5;
+}
+
+.main-text h2 {
+    font-size: 2rem;
+}
+
+.main-text h4 {
+    font-size: 1rem;
+}
+
+.hero-section {
+    background-image: url(img/landing-hero-bg.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    /* height: 250px; */
+    /* width: auto; */
+}
+
+.learn-more {
+    background-image: url(img/gno-prep-bg\ \(1\).jpeg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 992px) {
+    .main-text h1 {
+        font-size: 9rem;
+        line-height: 1;
+    }
+
+    .main-text h2 {
+        font-size: 5rem;
+    }
+
+    .main-text h4 {
+        font-size: 2rem;
+    }
+
+    .bg-primary-lg {
+        background-color: #2425FF !important;
+    }
+}
+
+/* @media (min-width: 1024px) {
+    .bg-primary-lg {
+        background-color: #2425FF !important;
+    }
+} */
+
+@media (min-width: 1280px) {
+    .xlbottom {
+        bottom: 100px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+.lg-pt-0, .lg-py-0 {
+padding-top: 0;
+}
+}
+
+.pt-20{
+padding-top: 5rem;
+}
+.pb-20{
+padding-bottom: 5rem;
+}
+.min-h-main {
+min-height: calc(100vh - 83px);
+}
+
+
+
+.middle {
+    vertical-align: middle;
+}
