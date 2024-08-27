@@ -1,4 +1,153 @@
   /* @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap'); */
+  
+  body::after {
+    content: "xs";
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  .main-img img {
+    width: 75%;
+  }
+
+
+
+  @media (min-width: 576px) {
+    body::after {
+        content: "sm";
+        color: red;
+        font-size: 30px;
+        font-weight: 900;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+      }
+
+      .main-text h1 {
+        font-size: 5rem;
+        line-height: 1;
+        margin: 0;
+      }
+
+      .main-text h2 {
+        font-size: 3rem;
+        line-height: 1;
+        margin: 0;
+      }
+  }
+
+  @media (min-width: 768px) {
+    body::after {
+        content: "md";
+        color: red;
+        font-size: 30px;
+        font-weight: 900;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+      }
+
+
+      .main-text h1 {
+        font-size: 10rem;
+        line-height: 1;
+        margin: 0;
+      }
+
+      .main-text h2 {
+        font-size: 5rem;
+        line-height: 1;
+        margin: 0;
+      }
+
+      .main-img img {
+        width: 50%;
+      }
+
+  }
+
+  @media (min-width: 992px) {
+    body::after {
+        content: "lg";
+        color: red;
+        font-size: 30px;
+        font-weight: 900;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+      }
+
+      .main-text h1 {
+        font-size: 5rem;
+        line-height: 1;
+        margin: 0;
+      }
+
+      .main-text h2 {
+        font-size: 3rem;
+        line-height: 1;
+        margin: 0;
+      }
+
+      /* .main-img img {
+
+      } */
+  }
+  
+  @media (min-width: 1200px) {
+    body::after {
+        content: "xl";
+        color: red;
+        font-size: 30px;
+        font-weight: 900;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+      }
+
+
+
+      .main-text h1 {
+        font-size: 10rem;
+        line-height: 1;
+        margin: 0;
+      }
+
+      .main-text h2 {
+        font-size: 100px;
+        line-height: 1;
+        margin: 0;
+      }
+  }
+  
+  @media (min-width: 1400px) {
+    body::after {
+        content: "xxl";
+        color: red;
+        font-size: 30px;
+        font-weight: 900;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
   * {
     margin: 0;
     box-sizing: border-box;
@@ -6,7 +155,6 @@
 
 body {
     font-family: "Pepsi Owners 2";
-    color: white;
 }
 
 img {
@@ -18,18 +166,18 @@ a {
     color: inherit;
 }
 
-.main-text h1 {
-    font-size: 4rem;
-    line-height: 0.5;
+
+
+
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    /* height: 100vh; Full viewport height */
 }
 
-.main-text h2 {
-    font-size: 2rem;
-}
 
-.main-text h4 {
-    font-size: 1rem;
-}
 
 .hero-section {
     background-image: url(img/landing-hero-bg.png);
@@ -49,30 +197,6 @@ a {
     background-position: center;
 }
 
-@media (min-width: 992px) {
-    .main-text h1 {
-        font-size: 9rem;
-        line-height: 1;
-    }
-
-    .main-text h2 {
-        font-size: 5rem;
-    }
-
-    .main-text h4 {
-        font-size: 2rem;
-    }
-
-    .bg-primary-lg {
-        background-color: #2425FF !important;
-    }
-}
-
-/* @media (min-width: 1024px) {
-    .bg-primary-lg {
-        background-color: #2425FF !important;
-    }
-} */
 
 @media (min-width: 1280px) {
     .xlbottom {
@@ -85,6 +209,8 @@ a {
 .lg-pt-0, .lg-py-0 {
 padding-top: 0;
 }
+
+
 }
 
 .pt-20{
